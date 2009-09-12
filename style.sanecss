@@ -1,0 +1,144 @@
+$links = #008cf8;
+$headers = #f90000;
+$lightGrey = #acacac;
+$fontFamily = "Andika", "Nimbus Sans L", Helvetica, Arial, sans;
+
+$funkyone = #22b3fc;
+$funkytwoaltone = #f6ec3b;
+$funkytwoalttwo = #ffff67;
+$funkytwo = $funkytwoaltone;
+$funkythree = #fe74c5;
+
+%curved = {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+@font-face  {
+  font-family: "Essays 1743";
+  src: local("Essays 1743"), url("Essays1743/Essays1743.ttf");
+}
+
+@font-face {
+    font-family: "Andika";
+    src: local("Andika"), url("Fonts/AndBasR.ttf");
+}
+
+
+*  {
+    font-family: $fontFamily;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4em;
+}
+
+#container {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+header h1 {
+    font-size: 5em;
+}
+
+section.columns {
+    width: 100%;
+    clear: both;
+    display: block;
+}
+
+article header h2 {
+    color: $lightGrey;
+    display: inline-block;
+}
+article header img {
+    display: inline-block;
+    float: right;
+    height: 100px;
+    border: 1px solid $lightGrey;
+    vertical-align: middle;
+}
+
+footer {
+    display: block;
+    clear: both;
+    width: 100%;
+    border-top: 2px solid;
+    border-top-color: $funkyone;
+}
+
+a {
+    color: $links;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+article.threecolumn {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-top: 1.4em;
+}
+article.threecolumn:last-child {
+    margin-right: 0;
+}
+
+h1:hover .funky1 {
+    color: $funkyone;
+}
+h1:hover .funky2 {
+    color: $funkytwo;
+}
+h1:hover .funky3 {
+    color: $funkythree;
+}
+
+%ahu = {
+    border-width: 0px;
+    border-style: solid;
+    border-bottom-width: 2px;
+}
+#blog header {
+    @extends: ahu;
+    border-color: $funkyone;
+}
+#twitter header {
+    @extends: ahu;
+    border-color: $funkytwo;
+}
+#bio header {
+    @extends: ahu;
+    border-color: $funkythree;
+}
+
+ul.tweet_list, ul.blog_list {
+    list-style: none;
+    padding: 0px;
+}
+.tweet_avatar img {
+    float: left;
+    height: 2.4em;
+    width: 2.4em;
+}
+ul.tweet_list li, ul.blog_list li {
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+}
+li.tweet_even, li.blog_even {
+    background-color: #eee;
+}
+
+ul.blog_list li small {
+    font-size: 0.7em;
+    line-height: 0.7em;
+}
