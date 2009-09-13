@@ -24,15 +24,16 @@ $funkythree = #fe74c5;
     src: local("Andika"), url("Fonts/AndBasR.ttf");
 }
 
-
-*  {
-    font-family: $fontFamily;
+@font-face {
+    font-family: "Inconsolata";
+    src: local("Inconsolata", url("Fonts/Inconsolata.ttf");
 }
 
 html, body {
     margin: 0;
     padding: 0;
     line-height: 1.4em;
+    font-family: $fontFamily;
 }
 
 #container {
@@ -64,7 +65,6 @@ article header img {
     float: right;
     height: 100px;
     border: 1px solid $lightGrey;
-    vertical-align: middle;
 }
 
 footer {
@@ -73,6 +73,7 @@ footer {
     width: 100%;
     border-top: 2px solid;
     border-top-color: $funkyone;
+    font-family: "Inconsolata";
 }
 
 a {
@@ -81,6 +82,10 @@ a {
 }
 a:hover {
     text-decoration: underline;
+}
+
+img {
+    vertical-align: middle;
 }
 
 article.threecolumn {
@@ -148,7 +153,6 @@ ul.blog_list li small {
     padding: 0;
 }
 #bio ul li img {
-    vertical-align: middle;
     margin: 0.35em;
     border-width: 0px;
 }
