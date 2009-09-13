@@ -142,3 +142,13 @@ ul.blog_list li small {
     font-size: 0.7em;
     line-height: 0.7em;
 }
+
+#bio ul {
+    list-style: none;
+    padding: 0;
+}
+#bio ul li img {
+    vertical-align: middle;
+    margin: 0.35em;
+    border-width: 0px;
+}
