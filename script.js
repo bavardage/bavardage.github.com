@@ -11,7 +11,7 @@ $(document).ready(function() {
     auto_join_text_url: "we were checking out",
     loading_text: "loading tweets..."
   });
-  url = "http://www.google.com/reader/public/javascript/feed/http://ardoris.wordpress.com/feed/?callback=?"
+  var url = "http://www.google.com/reader/public/javascript/feed/http://ardoris.wordpress.com/feed/?callback=?";
   $.getJSON(url,
 	    function(data) {
 	      for(var i = 0; i < data.items.length && i < 5; i += 1) {
