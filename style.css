@@ -50,7 +50,7 @@ article header img  {
   display: inline-block;
   float: right;
   height: 100px;
-  border: 1px solid $lightGrey;
+  border: 1px solid #acacac;
 }
 
 footer  {
